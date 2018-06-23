@@ -3,11 +3,11 @@ class Table:
     listeJoueurs ={}
     joueurCourant =""
 
-    def __init__(self, idTable, nomtable, liste):
+    def __init__(self, idTable, nomtable, listeJoueur, listeCellules):
         self.idTable = idTable
         self.nomTable = nomtable
-        self.joueurs = Joueur(liste)
-        self.grille = [[]]
+        self.joueurs = listeJoueur
+        self.cellules = listeCellules
 
     def getIdTable(self):
         return self.idTable
@@ -30,26 +30,10 @@ class Table:
     def setJoueurs(self, joueur):
         self.joueurs = joueur
 
-    def setGrille(self, grille):
-        self.grille = grille
+    def setCellule(self, cellule):
+        self.cellules = cellule
 
     def executerMouvement(self, Move):
-
-        if(Move.getJoueur()==self.joueurCourant):
-
-            if(not self.grille[Move.getPion().getPosition_x][Move.getPion().getPosition_y]):
-
-                self.grille[Move.getPion().getPosition_x][Move.getPion().getPosition_y].append(Move.getPion())
-
-                self.verifierStatut()
-
-
-            else:
-                print("Choix non disponible veuillez choisir une autre cellule")
-
-        else:
-            print("Veuillez attendre votre tour")
-
         pass
 
     def ajouterJoueur(self, joueur):
