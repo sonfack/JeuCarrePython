@@ -35,6 +35,21 @@ class Table:
 
     def executerMouvement(self, Move):
 
+        if(Move.getJoueur()==self.joueurCourant):
+
+            if(not self.grille[Move.getPion().getPosition_x][Move.getPion().getPosition_y]):
+
+                self.grille[Move.getPion().getPosition_x][Move.getPion().getPosition_y].append(Move.getPion())
+
+                self.verifierStatut()
+
+
+            else:
+                print("Choix non disponible veuillez choisir une autre cellule")
+
+        else:
+            print("Veuillez attendre votre tour")
+
         pass
 
     def ajouterJoueur(self, joueur):
