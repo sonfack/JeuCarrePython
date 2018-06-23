@@ -7,7 +7,7 @@ class Table:
         self.idTable = idTable
         self.nomTable = nomtable
         self.joueurs = listeJoueur
-        self.cellules = listeCellules
+        self.cellule = listeCellules
 
     def getIdTable(self):
         return self.idTable
@@ -18,8 +18,8 @@ class Table:
     def getJoueurs(self):
         return self.joueurs
 
-    def getGrille(self):
-        return self.grille
+    def getCellule(self):
+        return self.cellule
 
     def setIdTable(self, idTable):
         self.idTable = idTable
@@ -31,13 +31,17 @@ class Table:
         self.joueurs = joueur
 
     def setCellule(self, cellule):
-        self.cellules = cellule
+        self.cellule = cellule
 
     def executerMouvement(self, Move):
-        pass
+
+        if(Move.getJoueur()==self.joueurCourant):
+        else:
+            print("Veuillez attendre votre tour")
+
 
     def ajouterJoueur(self, joueur):
-        self.listeJoueurs.append(joueur)
+        pass
 
     def verifierStatut(self):
         pass
