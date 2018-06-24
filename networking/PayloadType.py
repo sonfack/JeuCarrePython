@@ -1,0 +1,3 @@
+class PayloadType:
+    PAYLOAD_TYPE_MESSAGE_STRING = "1"
+    PAYLOAD_TYPE_OBJECT_MOVE = "2"
