@@ -1,7 +1,6 @@
 class Table:
-
-    listeJoueurs ={}
-    joueurCourant =""
+    listeJoueurs = {}
+    joueurCourant = ""
 
     def __init__(self, idTable, nomtable, listeJoueur, listeCellules):
         self.idTable = idTable

@@ -1,0 +1,4 @@
+class PackeType:
+    PACKET_TYPE_REQUEST = "1"
+    PACKET_TYPE_RESPONSE = "2"
+    PACKET_TYPE_NOTIFY = "3"
