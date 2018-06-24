@@ -1,49 +1,48 @@
+import models
+
 class Pion:
 
-    def __init__(self, idPion, couleurPion, formePion, position_x, position_y, Joueur):
-        self.idPion = idPion
-        self.couleurPion = couleurPion
-        self.formePion = formePion
-        self.position_x = position_x
-        self.position_y = position_y
-        self.joueur = Joueur()
+    def __init__(self, num, couleur, forme, x, y, joueur):
+        self.num = num
+        self.couleur = couleur
+        self.forme = forme
+        self.x = x
+        self.y = y
+        self.joueur = joueur
 
-    def getIdPion(self):
-        return self.idPion
+    def get_num(self):
+        return self.num
 
-    def getCouleurPion(self):
-        return self.couleurPion
+    def get_couleur(self):
+        return self.couleur
 
-    def getFormePion(self):
-        return self.formePion
+    def get_forme(self):
+        return self.forme
 
-    def getPosition_x(self):
-        return self.position_x
+    def get_x(self):
+        return self.x
 
-    def getPosition_y(self):
-        return self.position_y
+    def get_y(self):
+        return self.y
 
-    def getJoueur(self):
+    def get_joueur(self):
         return self.joueur
 
-    def setIdPion(self, idPion):
-        self.idPion = idPion
+    def set_num(self, num):
+        self.num = num
 
-    def setCouleurPion(self, couleurPion):
-        self.couleurPion = couleurPion
+    def set_couleur(self, couleur):
+        self.couleur = couleur
 
-    def setCouleurPion(self, couleurPion):
-        self.couleurPion = couleurPion
+    def set_forme(self, forme):
+        self.forme = forme
 
-    def setFormePion(self, formePion):
-        self.formePion = formePion
+    def set_x(self, x):
+        self.x = x
 
-    def setPosition_x(self, position_x):
-        self.position_x = position_x
+    def set_y(self, y):
+        self.y = y
 
-    def setPosition_y(self, position_y):
-        self.position_y = position_y
-
-    def getJoueur(self, Joueur):
-        self.joueur = Joueur
+    def set_joueur(self, joueur):
+        self.joueur = joueur
 

@@ -1,34 +1,21 @@
+import models
+
 class Cellule:
 
-    def __init__(self, idCellule, point_x, point_y, Table):
-        self.idCellule = idCellule
-        self.point_x = point_x
-        self.point_y = point_y
-        self.table = Table
-
-    def getIdCellule(self):
-        return  self.idCellule
-
-    def getPoint_x(self):
-        return self.point_x
-
-    def getPoint_y(self):
-        return self.point_y
-
-    def getTable(self):
-        return self.table
+    def __init__(self, row, col):
+        self.row = row
+        self.col = col
 
 
-    def setIdCellule(self, idCellule):
-        self.idCellule = idCellule
+    def get_row(self):
+        return self.row
 
-    def setPoint_x(self, point_x):
-        self.point_x = point_x
+    def get_col(self):
+        return self.col
 
-    def setPoint_y(self, point_y):
-        self.point_y = point_y
+    def set_row(self, row):
+        self.row = row
 
-    def setTable(self, table):
-        self.table = table
+    def set_col(self, col):
+        self.col = col
 
-    

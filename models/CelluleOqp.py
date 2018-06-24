@@ -1,13 +1,11 @@
 class CelluleOqp(Cellule):
 
+    def __init__(self, pion):
+        super()._init_()
+        self.pion = pion
 
-    def __init__(self, Pion):
-
-        super().__init__()
-        self.pion = Pion
-
-    def getPoint(self):
+    def get_pion(self):
         return self.pion
 
-    def setPoint(self, Pion):
-        self.pion = Pion
+    def set_pion(self, pion):
+        self.pion = pion

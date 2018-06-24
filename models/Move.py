@@ -1,35 +1,40 @@
+import models
+
 class Move:
 
+    def __init__(self, num, table, joueur, pion, cellule):
+        self.num = num
+        self.table = table
+        self.joueur = joueur
+        self.pion = pion
+        self.cellule = cellule
 
-    def __init__(self, idMove, Table, Joueur, Pion):
-        self.idMove = idMove
-        self.table = Table
-        self.joueur = Joueur
-        self.pion = Pion
+    def get_num(self):
+        return self.num
 
-    def getIdMove(self):
-        return self.idMove
-
-    def getTable(self):
+    def get_table(self):
         return self.table
 
-    def getJoueur(self):
+    def get_joueur(self):
         return self.joueur
 
-    def getPion(self):
-        return self.Pion
+    def get_pion(self):
+        return self.pion
 
-    def setIdMove(self, idMove):
-        self.idMove = idMove
+    def get_cellule(self):
+        return  self.cellule
 
-    def setTable(self, Table):
-        self.table = Table
+    def set_num(self, num):
+        self.num = num
 
-    def setJoueur(self, Joueur):
-        self.joueur = Joueur
+    def set_table(self, table):
+        self.table = table
 
-    def setPion(self, Pion):
-        self.pion = Pion
+    def set_joueur(self, joueur):
+        self.joueur = joueur
 
+    def set_pion(self, pion):
+        self.pion = pion
 
-
+    def set_cellule(self, cellule):
+        self.cellule = cellule
